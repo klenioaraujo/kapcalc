@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="css/display.css" rel="stylesheet" />
+    <script src="display.js" type="text/javascript"></script>
+    <script src="getcalc.js" type="text/javascript"></script>
+    <script src="function.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="calcular">
+            <div class="display">
+                <div id="valor-anterior"></div>
+                <div id="valor-actual"></div>
+            </div>
+            <button class="col-2" onclick="display.limparTudo()">C</button>
+            <button onclick="display.limpar()">&larr;</button>
+            <button class="operador" value="dividir">/</button>
+            <button class="numero">7</button>
+            <button class="numero">8</button>
+            <button class="numero">9</button>
+            <button class="operador" value="multiplicar">X</button>
+            <button class="numero">4</button>
+            <button class="numero">5</button>
+            <button class="numero">6</button>
+            <button class="operador" value="subtrair">-</button>
+            <button class="numero">1</button>
+            <button class="numero">2</button>
+            <button class="numero">3</button>
+            <button class="operador" value="somar">+</button>
+            <button class="col-2 numero">0</button>
+            <button class="numero">.</button>
+            <button class="operador" value="igual">=</button>
+        </div>
+    </div>
+    <center>
+        <button class="link" onclick="location.href='https://calc.kleniopadilha.com/view.php';" >View BD</button>
+    </center>
+
+</body>
+</html>
